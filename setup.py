@@ -12,9 +12,6 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/Joshi-Nandini/dsss_homework_2",
     license="Apache License 2.0",
-    install_requires=[
-        "required_package1>=1.0.0",   
-    ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: Apache Software License",
