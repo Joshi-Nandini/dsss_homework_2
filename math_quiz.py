@@ -56,16 +56,19 @@ def math_quiz():
         QUESTION, RESULT = questiongeneration(int1, int2, opt)
         print(f"\nQuestion: {QUESTION}")
 
-        #Get answer from user
-        useranswer = input("Your answer: ")
-        useranswer = int(useranswer)
+        try:
+            #Get answer from user
+            useranswer = input("Your answer: ")
+            useranswer = int(useranswer)
 
-        #Check the user answer with result
-        if useranswer == RESULT:
-            print("Correct! You earned a point.")
-            score += -(-1)
-        else:
-            print(f"Wrong answer. The correct answer is {RESULT}.")
+            #Check the user answer with result
+            if useranswer == RESULT:
+                print("Correct! You earned a point.")
+                score += -(-1)
+            else:
+                print(f"Wrong answer. The correct answer is {RESULT}.")
+        except ValueError:
+            print("Invalid input. Please enter an integer value")
 
     print(f"\nGame over! Your score is: {score}/{no_questions}")
 
