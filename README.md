@@ -7,7 +7,7 @@ User answers randomly created mathematical questions
 - Randomly generates numbers and math problems for each question
 - Does addition, subtraction, and multiplication operations
 - Provides answers and a user's score at the end
-- Includes error for invalid user inputs
+- Shows error for invalid user inputs
 
 ## Getting Started
 
